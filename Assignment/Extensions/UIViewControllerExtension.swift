@@ -25,7 +25,7 @@ extension UIViewController {
         let loader = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
         loader.backgroundColor = .black.withAlphaComponent(0.8)
         loader.tag = 111
-        loader.isUserInteractionEnabled = true
+        view.isUserInteractionEnabled = false
         
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.style = .large
@@ -43,5 +43,6 @@ extension UIViewController {
         
         let loader = view.viewWithTag(111)
         loader?.removeFromSuperview()
+        view.isUserInteractionEnabled = true
     }
 }
