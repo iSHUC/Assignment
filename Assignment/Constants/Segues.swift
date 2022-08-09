@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Segues {
+    
+    static var breedsToBreedImages: String { "BreedsToBreedImages" }
+}

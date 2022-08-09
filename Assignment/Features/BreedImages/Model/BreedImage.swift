@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+// MARK: - BreedImage
+
+struct BreedImage: Codable {
+    
+    let message: String
+    let status: String
+}

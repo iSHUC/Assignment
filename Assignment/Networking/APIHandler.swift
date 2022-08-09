@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum HTTPMethod: String {
+    
+    case get = "GET"
+}
+
+typealias APIHandler = RequestHandler & ResponseHandler

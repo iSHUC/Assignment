@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+// MARK: - Breeds
+
+struct Breeds: Codable {
+    
+    let message: [String: [String]]
+    let status: String
+}

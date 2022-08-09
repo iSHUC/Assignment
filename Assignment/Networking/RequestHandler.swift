@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol RequestHandler {
+        
+    func request() -> URLRequest?
+}

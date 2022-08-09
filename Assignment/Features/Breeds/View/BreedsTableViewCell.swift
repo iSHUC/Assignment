@@ -9,15 +9,14 @@ import UIKit
 
 class BreedsTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    // MARK: - Properties
+
+    static var identifier: String { "BreedsTableViewCell" }
+    
+    // MARK: - Configure
+    
+    func configure(_ breed: String) {
+        
+        textLabel?.text = breed
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

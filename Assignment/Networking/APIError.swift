@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct APIError: Error {
+    
+    let code: Int
+    let message: String
+}

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol Service {
+    
+    func getBreeds() async throws -> Breeds
+    func getBreedImage(_ breed: String) async throws -> BreedImage
+}
